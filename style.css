@@ -1,0 +1,384 @@
+body{
+  background-color: rgb(219, 213, 213);
+}
+#logo{
+  font-weight: 400;
+  font-size: 85px;
+  background-color: #03233d;
+  color: white;
+  margin-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* font-family:"RM Neue",sans-serif; */
+  
+}
+#logo:hover{
+  cursor: pointer;
+}
+h2{
+  font-family: "RM Neue",sans-serif;
+   color: #03233d;
+  font-size: 200%;
+}
+.header{
+    display: flex;
+    justify-content: center;    
+}
+
+.header div:nth-of-type(1) {
+  flex-grow: 1;
+}
+.title{
+  display: flex;
+  justify-content:center;
+  margin-bottom: -50px;
+  margin-left: 5em;
+  
+}
+.navDiv{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+.bookmarks{
+  margin: 1em;
+  cursor: pointer;
+  max-width: 3em;
+  
+}
+#bookmarks-label{
+  margin-top: -1em;
+  background-color: #0276FF;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  font-family: "RM Neue",sans-serif;
+  font-weight: lighter;
+}
+#darkmode-label{
+    margin-top: 1em;
+    }
+#bookmarksDiv{
+    cursor: pointer;
+    margin-left: 2%;
+    margin-top: 1%;
+  }
+
+.toggleDiv{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  max-width: 5em;
+  max-height: 5em;
+  
+}
+.switch{
+  margin-top: 1em;
+}
+
+
+/****************************** starts dark mode toggle switch**************************/
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/****************************** ends dark mode toggle switch **************************/
+
+.home{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ }
+ .home1{
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ }
+ /* .home-container{
+  display: flex;
+  justify-content: center;
+ } */
+
+.card {
+  text-align: center;
+  /* border: grey solid 1px; */
+  /* padding: 1rem; */
+  width: auto;
+  max-height: auto;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  /* box-shadow: 3px 4px #6551c9 */
+}
+.bookmarkPic{
+  /* max-width: 100%;
+  min-width: 100%;
+  max-height: 70%; */
+  justify-self: center;
+  height: 12rem;
+  width: auto;
+}
+.filterDiv{
+  display: flex;
+  max-height: 0%;
+  min-width: 100%;
+  justify-content: end;
+  /* background-color: #2196F3; */
+}
+label{
+  margin-right: 0.5em;
+}
+
+.dark-mode {
+  background-color: #03233d;
+}
+.text-dark-mode{
+  color: beige;
+}
+
+
+
+/* MENU BUTTONS */
+.button-22 {
+  align-items: center;
+  appearance: button;
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-22:active {
+  background-color: #006AE8;
+}
+
+.button-22:hover {
+  background-color: #6298da;
+}
+
+/* BOOKMARK BUTTONS */
+.button-0 {
+  position: relative;
+  background-color: #0276FF;
+  border: none;
+  border-radius: 5px;
+  height: 1.5rem;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 16px;
+  justify-self: center;
+  font-family: "RM Neue",sans-serif;
+}
+#deleteBtn:hover{
+  cursor: pointer;
+}
+#surpriseBtn{
+  /* width: 12em; */
+  font-size: 150%;
+  padding: 20px 20px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+
+}
+#nextCat::after{
+  content: ' \2192';
+}
+#nextDog::after{
+  content: ' \2192';
+}
+#previous1::before{
+  content: '\2190'
+}
+#previous2::before{
+  content: '\2190'
+}
+#bookmarkBtn{
+  margin-right: 100px;
+}
+#bookmarksDiv{
+  position: relative;
+  margin-bottom: 3%;
+}
+
+#filter-bookmarks{
+  background-color: #ffffff;
+  color: #0276FF;
+}
+.cat-btns{
+  display: none;
+}
+.main{
+  display:flex;
+  justify-content: center;
+  max-width: 80%;
+  max-height: 60%;
+  margin-left: 10%;
+  margin-top: 3%;
+  flex-wrap: wrap;
+}
+.show-bookmarks{
+  display:none;
+  justify-content: center;
+  max-width: 80%;
+  max-height: 60%;
+  margin-left: 10%;
+  margin-top: 3%;
+  flex-wrap: wrap;
+}
+.image-container{
+  max-width: 50%;
+  max-height: 90%;
+  display: block;
+}
+.cat-btns{
+  display: none;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+}
+.dog-btns{
+  display: none;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+}
+.mainPic{
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 600px) 
+{
+.main{ 
+  max-width: 60%;
+  margin-left: 20%;
+}
+.button-22{
+  padding: 5px 6px;
+  margin-right: 5%;
+}
+#bookmarkBtn{
+  margin-left: 2%;
+  margin-right: 6%;
+}
+#bookmarksDiv{
+  margin-top: -1.5px;
+}
+.main{
+  margin-top: -3%;
+}
+.home1{
+  margin-left: 11%;
+}
+}
+@media only screen and (max-width: 600px){
+  .button-22{
+    padding: 5px 6px;
+    margin: auto;
+  }
+  #bookmarksDiv{
+    position: relative;
+    margin-bottom: 12%;
+  }
+  .navDiv{
+   margin-bottom: -10%;
+  }
+  .mobile{
+    margin: 5px;
+  }
+  #bookmarkBtn{
+    margin-right: 1%;
+  }
+  .title{
+    display: flex;
+    justify-content:center;
+    margin-bottom: -50px;
+    margin-left: 0em;
+    
+  }
+ 
+}
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+{
+  "bookmarked": [
+    {
+      "url": "https://cdn2.thecatapi.com/images/38i.jpg",
+      "type": "cat",
+      "id": 1
+    },
+    {
+      "url": "https://random.dog/12567-30449-22158.jpg",
+      "type": "dog",
+      "id": 4
+    },
+    {
+      "url": "https://random.dog/099ee7e2-6ad5-4f50-bc0f-2ac192620fc7.jpg",
+      "type": "dog",
+      "id": 5
+    },
+    {
+      "url": "https://cdn2.thecatapi.com/images/ai5kX5f7Q.jpg",
+      "type": "cat",
+      "id": 12
+    },
+    {
+      "url": "https://cdn2.thecatapi.com/images/dfc.jpg",
+      "type": "cat",
+      "id": 13
+    },
+    {
+      "url": "https://random.dog/ccd05ed6-84ec-43e8-8ebb-c49407c96cf5.png",
+      "type": "dog",
+      "id": 20
+    },
+    {
+      "url": "https://random.dog/a87a8d31-48dd-45b4-baab-e115dfa70692.jpg",
+      "type": "dog",
+      "id": 21
+    }
+  ]
+}
